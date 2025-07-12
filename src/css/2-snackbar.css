@@ -1,0 +1,78 @@
+
+/* Форм */
+.form {
+  max-width: 320px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+input[type="number"] {
+    display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input[type="number"]:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.3);
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.6rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: normal;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+input[type="radio"] {
+  accent-color: #0077cc;
+}
+
+button[type="submit"] {
+  padding: 0.6rem 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,103 @@
+/* Стилі для контейнера таймера */
+#datetime-picker {
+   
+  width: 272px;
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #989898;
+
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#datetime-picker,
+button[data-start] {
+  box-sizing: border-box;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+#datetime-picker:hover {
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 40px;
+}
+
+/* Кожне поле — день, година, хвилина, секунда */
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Значення часу */
+.value {
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  min-width: 80px;
+  text-align: center;
+}
+
+/* Назва кожного блоку */
+.label {
+  margin-top: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+/* Стан кнопки Start */
+button[data-start] {
+  width: 75px;
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 16px;
+  /* margin-top: 20px; */
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: background-color 0.3s ease;
+}
+
+button[data-start]:hover:not(:disabled) {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
