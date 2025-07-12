@@ -1,10 +1,10 @@
 /* Стилі для контейнера таймера */
 #datetime-picker {
-   
+   box-sizing: border-box;
   width: 272px;
   height: 40px;
-  padding: 8px 12px;
-  border-radius: 4px;
+  padding: 4px 12px;
+  border-radius: 8px;
   border: 1px solid #ccc;
   background-color: #fff;
 
@@ -81,7 +81,7 @@ button[data-start] {
   cursor: pointer;
   background-color: #007bff;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
